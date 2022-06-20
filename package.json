@@ -5,8 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "docker:build": "docker build --tag zip-downloader .",
     "docker:run": "docker run zip-downloader",
+    "docker:windows": "npm run build:windows && npm run docker:run",
+    "docker:linux": "npm run build:linux && npm run docker:run",
+    "build:linux": "docker build --tag zip-downloader -f dockerfile.linux .",
+    "build:windows": "docker build --tag zip-downloader -f dockerfile.windows .",
     "docker:host": "docker run -d -p 8000:8000 zip-downloader"
   },
   "keywords": [],
