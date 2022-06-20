@@ -1,4 +1,5 @@
 # REF: https://stackoverflow.com/questions/49659193/docker-node-js-windows#:~:text=As%20far%20as%20I%20understand,to%20switch%20to%20Linux%20container. 
+# REF (Issues with Docker): https://stackoverflow.com/questions/35325103/docker-error-when-pulling-java-8-image-failed-to-register-layer/35325477#35325477
 FROM mcr.microsoft.com/windows/servercore:1803 as installer
 
 SHELL ["powershell", "-Command", "$ErrorActionPreference = 'Stop';$ProgressPreference='silentlyContinue';"]
