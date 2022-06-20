@@ -6,7 +6,7 @@ A little project to showcase certain skills in development, like utilizing Node 
 
 ## Getting Started
 
-Docker is a required dependency that you will need setup.
+Docker is a required dependency that you will need setup. (https://www.docker.com/get-started/)
 
 Once you have Docker setup you can either manually build and run this program... or utilitze the scripts provided for you in package.json (recommended).
 
